@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no, maximun-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Agapita Cleta</title>
 
@@ -17,6 +17,12 @@
       .container{
           display: flex;
           justify-content: center;
+      }
+      .contenedor{
+          width: 80%;
+          max-width: 1000px;
+          margin: 0 auto;
+          overflow: hidden;
       }
 
       header {
@@ -64,8 +70,15 @@
           letter-spacing: 1px;
           font-size: 1.5rem;
           background-color: #FFF;
+          width: 70%;
       }
-
+      .main {
+          width: 70%;
+          background-color: #FFF;
+          padding: 20px;
+          float: left;
+          box-sizing: border-box;
+      }
       td {
           border: 1px solid rgb(190, 190, 190);
           padding: 10px 20px;
@@ -87,7 +100,7 @@
   </style>
 </head>
 <body>
-    
+  <div class="contenedor">  
     <header>
         <h1>¿Que vamos hacer esta noche Agapita?</h1>
       <nav>
@@ -104,7 +117,7 @@
     <h2>Lo que nos gusta y no nos gusta</h2>
 
     <hr>
-
+<br><br><br><br><br><br>
     <div>
       <table style="margin: auto">
         <colgroup>
@@ -121,7 +134,7 @@
 
         <tr>
           <td>Alimento</td>
-          <td>Comida huemda de la mejor calidad siempre</td>
+          <td>Comida humeda de la mejor calidad siempre</td>
           <td>Whiskas</td>
         </tr>
 
@@ -162,6 +175,6 @@
         <p>Derechos reservados Tatiana Pachon &copy; 2024</p>
       </footer>
 
-
+ </div>
 </body>
 </html>
