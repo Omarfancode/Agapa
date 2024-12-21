@@ -12,6 +12,7 @@
           background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
           padding: 0;
           margin: 0;
+          box-sizing: border-box;
       }
 
       .container{
@@ -79,6 +80,7 @@
           cursor: pointer;
           margin: 0;
           padding: 0;
+          
       }
       
       td {
@@ -89,9 +91,19 @@
           border: 1px solid rgb(190, 190, 190);
           padding: 10px 20px;
           background-color: rgb(162, 162, 162);
-      }
+      }   
 
-      .footer {
+    /*----tabla para dispositivos mobiles
+    
+    .tabla-mobiel[
+      display: none;
+      width: 700px;
+    ]
+    
+    ----*/
+      
+    
+    .footer {
           background-color: #333;
           color: #FFF;
           padding: 10px;
@@ -99,8 +111,7 @@
           clear: both;
       }
 
-     
-      
+       
   </style>
 </head>
 <body>
@@ -121,8 +132,10 @@
     <h2>Lo que nos gusta y no nos gusta</h2>
 
     <hr>
+    
 <br><br><br><br><br><br>
     <div class="contenedor">
+      
       <table style="margin: auto">
         <colgroup>
           <col style="background-color: rgb(88, 88, 86);">
@@ -134,49 +147,81 @@
         </colgroup>
         <thead>
         <th></th>
-        <th>Prefiere:</th>
-        <th>No prefiere: </th>
+        <th>Nos gusta:</th>
+        <th>No nos gusta: </th>
         </thead>
        <tbody>
         <tr>
           <td>Alimento</td>
-          <td>Comida humeda de la mejor calidad siempre</td>
-          <td>Whiskas</td>
+          <td>Comida humeda Fancy Fest</td>
+          <td>Felix</td>
         </tr>
       </tbody>
        <tbody> 
         <tr></tr>
-          <td>Pepas</td>
-          <td>Alta gama</td>
-          <td>Generica</td>
+          <td>Pepitas</td>
+          <td>Taste of the wild</td>
+          <td>Pepitas viejas ¡Guacala!</td>
         </tr>
       </tbody>
       <tbody> 
         <tr>
           <td>Juguetes</td>
-          <td>Flor</td>
-          <td>Collar</td>
+          <td>Flor, Bolitas de icopor</td>
+          <td>Con agua, Collares</td>
         </tr>
       </tbody>
       <tbody>
         <tr>
           <td>Actividades</td>
-          <td>Dormir</td>
-          <td>Dejar barrer</td>
+          <td>Dormir (aunque muy poco)</td>
+          <td>Viajar y dejar barrer</td>
         </tr>
       </tbody>
 
       <tbody>
         <tr>
           <td>Programas</td>
-          <td>Futbol</td>
-          <td>Regueaton</td>
+          <td>Futbol, NatGeo</td>
+          <td>Reggaeton</td>
         </tr>  
       </tbody>
       </table>
-
-
+    
+      
+   <!-- <div class="tabla_mobile">
+     <div class="fila">
+      <div class="contiene"></div>
+       <div class="columna">
+        <div class="header">Nombre</div>
+        <div class="contenido">Agapita</div>
+       </div>
+      <div class="columna">
+      <div class="header">Apellido</div>
+      <div class="contenido">Pachon</div>
     </div>
+    <div class="columna">
+      <div class="header">email</div>
+      <div class="contenido">Agapita@gmail.com</div>
+    </div>
+  </div>
+  <div class="fila">
+    <div class="columna">
+      <div class="header">Nombre</div>
+      <div class="contenido">Cleta</div>
+    </div>
+    <div class="columna">
+      <div class="header">Apellido</div>
+      <div class="contenido">Pachon</div>
+    </div>
+       <div class="columna">
+         <div class="header">email</div>
+         <div class="contenido">Cleta@gmail.com</div>
+       </div>
+      </div>
+     </div>
+</div>-->
+
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
