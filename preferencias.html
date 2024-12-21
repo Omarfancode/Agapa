@@ -13,7 +13,7 @@
           padding: 0;
           
       }
-
+      
       .container{
           display: flex;
           justify-content: center;
@@ -81,6 +81,17 @@
           padding: 0;
           
       }
+
+      @media (max-width: 500px){
+          table {
+            display: none;
+          }
+          div.tabla_mobile{
+        display: block;
+          
+      }
+
+      }
       
       td {
           border: 1px solid rgb(190, 190, 190);
@@ -92,7 +103,21 @@
           background-color: rgb(162, 162, 162);
       }   
 
-    
+  div.tabla_mobile{
+    display: none;
+      }
+
+    /*--@media screen (max-width: 500px) {
+      div.tabla_mobile{
+        display: block;
+          
+      }
+
+      table.desktop{
+        display:none;
+      }
+     
+    }--*/
     
     .footer {
       background-color: #333;
@@ -106,7 +131,7 @@
   </style>
 </head>
 <body>
-   
+   <div class="nuevo"></div>
     <header>
         <h1>¿Que vamos hacer esta noche Agapita?</h1>
       <nav>
@@ -127,7 +152,7 @@
 <br><br><br><br><br><br>
     <div class="container">
       
-      <table style="margin: auto">
+      <table style="margin: auto" class="desktop">
         <colgroup>
           <col style="background-color: rgb(88, 88, 86);">
           <col>
@@ -179,7 +204,8 @@
       </tbody>
       </table>
     </div>
-        <!-- <div class="tabla_mobile">
+        
+  <div class="tabla_mobile">
      <div class="fila">
       <div class="contiene"></div>
        <div class="columna">
@@ -210,7 +236,7 @@
        </div>
       </div>
      </div>
-</div>-->
+</div>
 
 
 
